@@ -1,0 +1,125 @@
+/* Base styles */
+.body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f5a8df, #a6c1ee); /* Gradient background */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    margin: 10;
+    overflow: hidden;
+  }
+  
+  /* Container for the game */
+  .game-container {
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .h1 {
+    font-size: 36px;
+    color: #3e3e3e;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Grid styles */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(8, 60px); /* 8 columns */
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* border: rgb(255, 0, 0) 5px solid; */
+    /* background-color: red; */
+  }
+  
+  .cell {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 28px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+  }
+  
+  .cell:hover {
+    transform: scale(1.1);
+    background-color: #fce5cd; /* Light banana yellow on hover */
+  }
+  
+  .cell:empty {
+    background-color: #fff; /* Empty cells have a plain background */
+  }
+  
+  .cell.monkey {
+    color: #6a4c1c; /* Monkey color */
+  }
+  
+  .cell.banana {
+    color: #f3f100; /* Banana color */
+  }
+  
+  /* Parent container (centering button) */
+.container {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      
+    height: 100vh;            /* Make sure the container takes up full height */
+    text-align: center;       /* Optional: centers text inside the container */
+  }
+  
+  /* Button Styles */
+  .button {
+    padding: 12px 25px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff7b00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; */
+    margin-left: 500px;
+    margin-top: 20px;
+  }
+  
+  
+  .button:hover {
+    background-color: #ff9e4e; /* Lighter orange when hovered */
+  }
+  
+  .button:disabled {
+    background-color: #cccccc; /* Disabled state */
+    cursor: not-allowed;
+  }
+  
+  /* Game Over styles */
+  .game-over {
+    color: #d9534f;
+    font-size: 28px;
+    font-weight: bold;
+    animation: shake 0.5s ease-in-out infinite;
+  }
+  
+  /* Animations */
+  @keyframes shake {
+    0% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(-10px); }
+  }
+  
